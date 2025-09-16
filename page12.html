@@ -738,10 +738,13 @@
         </section>
 
         <div style="max-width: 760px; margin: 1rem auto 3rem; padding: 12px; border-radius: 16px; background: rgba(255,255,255,0.85); box-shadow: 0 14px 30px rgba(0,0,0,0.18); border: 1px solid rgba(255,255,255,0.8);">
-            <video controls style="width: 100%; border-radius: 12px; display: block; box-shadow: 0 10px 24px rgba(0,0,0,0.25);">
-                <source src="video4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div style="position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */ height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.25);">
+                <iframe 
+                    src="https://drive.google.com/file/d/1f4fguYbckES1lwRyXCvy3vEtvlQdC6lr/view?usp=sharing" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
 </body>
